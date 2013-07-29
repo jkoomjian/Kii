@@ -1,0 +1,15 @@
+body {text-align: center;}
+.main_container {text-align: left; display: inline-block;}
+h1 {text-align: center;}
+.description {margin: 15px;}
+
+div.label_input {margin-bottom: 5px;}
+div.label_input div {display: inline-block; margin: 10;}
+div.label_input div:first-child {width: 130px;}
+
+#fetch_results {text-align: center; margin-top: 20px;}
+
+div.data_table {margin-top: 25px; display: none;}
+div.data_table table {border: 1px solid #BBBBBB;border-collapse: collapse;}
+div.data_table table th {background-color: #EEEEEE; border: 1px solid #BBBBBB; padding: 0 5px;}
+div.data_table table td {border: 1px solid #CCCCCC; padding: 5px;}

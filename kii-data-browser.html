@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Kii Cloud Data Browser</title>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="kii-sdk.js"></script>
+		<script type="text/javascript" src="site.js"></script>
+		<link rel="stylesheet" href="site.css" type="text/css" />
+
+		<script type="text/javascript">
+		    $(document).ready(function() {
+		    	$("#fetch_results button").click(requestData);
+			});
+  		</script>
+	</head>
+	<body>
+		<div class='main_container'>
+			<h1>Kii Data Browser</h1>
+			<div class='description'>
+				This is a simple data browser for kii. Source is at: 
+
+			</div>
+			<div class='label_input'>
+				<div>App ID:</div>
+				<div><input type='text' id='kii_app_id' size='9'/></div>
+			</div>
+			<div class='label_input'>
+				<div>App Key:</div>
+				<div><input type='text' id='kii_app_key' size='33'/></div>
+			</div>
+			<div class='label_input'>
+				<div>Bucket Name:</div>
+				<div><input type='text' id='kii_bucket_name' /></div>
+			</div>
+			<div class='label_input'>
+				<div>Site ID:</div>
+				<div>
+					<select id='kii_site_id'>
+						<option value='KiiSite.US'>KiiSite.US</option>
+						<option value='KiiSite.JP'>KiiSite.JP</option>
+						<option value='KiiSite.CN'>KiiSite.CN</option>
+					</select>
+				</div>
+			</div>
+			<div id='fetch_results'>
+				<button>View Objects</button>
+			</div>
+			<div class='data_table'>
+				<div id='results_found'>
+					<span id='num_results_found'>0</span> Results Found
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
